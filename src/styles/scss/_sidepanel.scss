@@ -1,0 +1,79 @@
+.sidepanel {
+    width: 27%;
+    max-width: 385px;
+
+    .searchbox {
+        display: flex;
+        align-items: center;
+        gap: .7rem;
+        // border: 1px solid red;
+        padding: 12px;
+        border-radius: 5px;
+        background-color: #fff;
+        color: $placeholder;
+
+        input {
+            flex-grow: 1;
+            border: 0;
+            margin-right: auto;
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            background-color: transparent;
+
+            &:focus {
+                outline: 0;
+            }
+            &::placeholder {
+                color: $placeholder;
+            }
+        }
+    }
+
+    .filters {
+        margin-top: 1.2rem;
+        border-radius: 5px;
+
+        .filter_header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 12px;
+
+            span:first-child {
+                font-size: 14px;
+                font-weight: 500;
+            }
+            span:last-child {
+                font-size: 12px;
+            }
+        }
+
+        .filter_item {
+            background-color: #fff;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            gap: .6rem;
+        }
+
+        .filter_item + .filter_item {
+            border-top: 1px solid $bodyBg;
+        }
+
+        .filter_item span:nth-child(2) {
+            margin-right: auto;
+        }
+        .filter_item .caret svg {
+            color: $blue;
+            font-size: 15px;
+        }
+    }
+
+    .filters > *:first-child {
+        border-radius: 5px 5px 0 0;
+    }
+    .filters > *:last-child {
+        border-radius: 0 0 5px 5px;
+    }
+}

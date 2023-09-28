@@ -1,0 +1,38 @@
+.maincontent {
+    flex-grow: 1;
+    background-color: #fff;
+    border-radius: 18px;
+    padding: 0 20px;
+    
+    .maincontent_header {
+        padding: 16px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $bodyBg2;
+    }
+
+    .candidates, .status {
+        display: flex;
+        align-items: center;
+    }
+
+    .candidates > span {
+        margin-left: 25px;
+        font-size: 14px;
+        color: $blue;
+        font-weight: 500;
+    }
+
+    .qualified {
+        color: $blue;
+    }
+
+    .chip {
+        margin-left: 10px;
+        font-size: 10px;
+        padding: 3px;
+        border-radius: 999px;
+        background-color: $bodyBg2;
+    }
+}
